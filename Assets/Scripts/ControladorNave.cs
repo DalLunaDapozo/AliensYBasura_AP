@@ -39,7 +39,7 @@ public class ControladorNave : MonoBehaviour
     public bool esta_vivo;
 
     public Bala bala;
-    public int daño_bala;
+    public int dano_bala;
     public float velocidad_bala;
     public bool puede_disparar;
 
@@ -83,7 +83,7 @@ public class ControladorNave : MonoBehaviour
         {
             puede_disparar = false;
             Bala nueva_bala = Instantiate(bala, de_donde_sale_la_bala.position, transform.rotation);
-            nueva_bala.SetBala(velocidad_bala, daño_bala);
+            nueva_bala.SetBala(velocidad_bala, dano_bala);
         }
 
         if (!puede_disparar)

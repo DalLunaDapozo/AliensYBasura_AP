@@ -7,7 +7,7 @@ public class Bala : MonoBehaviour
     private Rigidbody fisicas;
 
     private float velocidad;
-    private int daño;
+    private int dano;
 
     public float tiempo_antes_de_destruirse = 10f;
 
@@ -32,7 +32,7 @@ public class Bala : MonoBehaviour
     public void SetBala(float _vel, int _d)
     {
         this.velocidad = _vel;
-        this.daño = _d;
+        this.dano = _d;
     }
 
     private void OnCollisionEnter(Collision collision)
